@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>RetailTransactionPaymentTrans_Extension</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public static  class RetailTransactionPaymentTrans_Extension
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>RetailTransactionPaymentTrans_Post_init</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Filter payment transactions based on sales order 
+    /// </summary>
+    /// <param name="args"></param>
+    [PostHandlerFor(formStr(RetailTransactionPaymentTrans), formMethodStr(RetailTransactionPaymentTrans, init))]
+    public static void RetailTransactionPaymentTrans_Post_init(XppPrePostArgs args)
+    {
+        FormRun formRun = args.getThis() as FormRun;
+        Common common = formRun.args().record();
+        QueryBuildDataSource qbdsPaymentTrans = (formRun.dataSource(tableStr(RetailTransactionPaymentTrans)) as FormDataSource).queryBuildDataSource();
+
+        if (common is SalesTable)
+        {
+            SalesTable salesTable = common as SalesTable;
+            QueryBuildDataSource qbdsRetailTransactionTable = qbdsPaymentTrans.addDataSource(tableNum(RetailTransactionTable));
+            qbdsRetailTransactionTable.relations(true);
+            qbdsRetailTransactionTable.addRange(fieldNum(RetailTransactionTable, salesOrderId)).value(queryValue(salesTable.SalesId));
+        }
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

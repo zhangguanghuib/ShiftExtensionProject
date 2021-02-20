@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxFormExtension xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="Microsoft.Dynamics.AX.Metadata.V6">
+	<Name>MCRCustomerService.AppSuiteExt</Name>
+	<ControlModifications />
+	<Controls>
+		<AxFormExtensionControl xmlns="">
+			<Name>FormExtensionControlecgjcusa1</Name>
+			<FormControl xmlns=""
+				i:type="AxFormMenuFunctionButtonControl">
+				<Name>mibSalesTransactions</Name>
+				<HeightMode>Auto</HeightMode>
+				<Type>MenuFunctionButton</Type>
+				<WidthMode>Auto</WidthMode>
+				<FormControlExtension
+					i:nil="true" />
+				<DataSource>SalesTable</DataSource>
+				<MenuItemName>RetailTransactionTable</MenuItemName>
+				<MultiSelect>No</MultiSelect>
+				<Text>@RET3214</Text>
+			</FormControl>
+			<Parent>ButtonGroupDetails</Parent>
+		</AxFormExtensionControl>
+		<AxFormExtensionControl xmlns="">
+			<Name>FormExtensionControltwgzkyk21</Name>
+			<FormControl xmlns=""
+				i:type="AxFormMenuFunctionButtonControl">
+				<Name>transactionPaymentTrans</Name>
+				<AutoDeclaration>Yes</AutoDeclaration>
+				<Type>MenuFunctionButton</Type>
+				<FormControlExtension
+					i:nil="true" />
+				<DataSource>SalesTable</DataSource>
+				<MenuItemName>RetailTransactionPaymentTrans</MenuItemName>
+				<MultiSelect>No</MultiSelect>
+			</FormControl>
+			<Parent>ButtonGroupDetails</Parent>
+		</AxFormExtensionControl>
+	</Controls>
+	<DataSourceModifications />
+	<DataSourceReferences />
+	<DataSources />
+	<Parts />
+	<PropertyModifications />
+</AxFormExtension>
