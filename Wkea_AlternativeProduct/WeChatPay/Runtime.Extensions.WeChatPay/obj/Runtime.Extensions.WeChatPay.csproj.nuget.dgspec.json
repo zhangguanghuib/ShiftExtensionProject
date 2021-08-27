@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\RetailSDK1019_WKea\\SampleExtensions\\WeChatPay\\Runtime.Extensions.WeChatPay\\Runtime.Extensions.WeChatPay.csproj": {}
+  },
+  "projects": {
+    "C:\\RetailSDK1019_WKea\\SampleExtensions\\WeChatPay\\Runtime.Extensions.WeChatPay\\Runtime.Extensions.WeChatPay.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\RetailSDK1019_WKea\\SampleExtensions\\WeChatPay\\Runtime.Extensions.WeChatPay\\Runtime.Extensions.WeChatPay.csproj",
+        "projectName": "Contoso.Commerce.Runtime.WeChatPay",
+        "projectPath": "C:\\RetailSDK1019_WKea\\SampleExtensions\\WeChatPay\\Runtime.Extensions.WeChatPay\\Runtime.Extensions.WeChatPay.csproj",
+        "packagesPath": "C:\\RetailSDK1019_WKea\\References",
+        "outputPath": "C:\\RetailSDK1019_WKea\\SampleExtensions\\WeChatPay\\Runtime.Extensions.WeChatPay\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\RetailSDK1019_WKea\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\RetailSDK1019_WKea\\pkgs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts": {
+              "target": "Package",
+              "version": "[10.3.21146.2, )"
+            },
+            "Microsoft.Dynamics.Commerce.Runtime.Messages": {
+              "target": "Package",
+              "version": "[9.26.20325.3, )"
+            },
+            "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages": {
+              "target": "Package",
+              "version": "[9.29.21146.14, )"
+            },
+            "Microsoft.Dynamics.Commerce.Runtime.Services": {
+              "target": "Package",
+              "version": "[9.26.20325.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

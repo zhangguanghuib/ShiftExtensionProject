@@ -1,0 +1,6 @@
+C:\RetailSDK1019_WKea\References\microsoft.dynamics.commerce.tools.coreproxygenerator\10.19.21098.2\tools>CommerceProxyGenerator.exe C:\RetailSDK1019_WKea\References\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.29.21146.14\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll CustomizedDll\Contoso.RetailServer.WeChatPay.dll /application:typescriptmoduleextensions
+
+Loading core metadata from assembly file C:\RetailSDK1019_WKea\References\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.29.21146.14\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll.
+Loading extended metadata from assembly file CustomizedDll\Contoso.RetailServer.WeChatPay.dll.
+Loading core metadata from assembly file C:\RetailSDK1019_WKea\References\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.29.21146.14\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll.
+Done.

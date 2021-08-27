@@ -1,0 +1,42 @@
+﻿<!--
+SAMPLE CODE NOTICE
+
+THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED, 
+OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.  
+THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.  
+NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Contoso.RetailServer.WeChatPay</AssemblyName>
+    <RootNamespace>Contoso.Commerce.Runtime.WeChatPay</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Shared\WeChatPayConstants.cs" Link="WeChatPayConstants.cs" />
+    <Compile Include="..\Shared\WeChatPayQrCodeInfo.cs" Link="WeChatPayQrCodeInfo.cs" />
+    <Compile Include="..\Shared\WeChatPayResult.cs" Link="WeChatPayResult.cs" />
+    <Compile Include="..\Shared\WeChatPayStatus.cs" Link="WeChatPayStatus.cs" />
+    <Compile Include="..\Shared\WeChatPayStatusInfo.cs" Link="WeChatPayStatusInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts" Version="10.3.21146.2" />
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Messages" Version="9.29.21146.14" />
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="9.29.21146.14" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Runtime.Extensions.WeChatPay\Runtime.Extensions.WeChatPay.csproj" />
+  </ItemGroup>
+</Project>

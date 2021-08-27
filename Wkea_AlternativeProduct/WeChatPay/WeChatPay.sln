@@ -1,0 +1,60 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+
+######################################################################################################################################################
+# SAMPLE CODE NOTICE                                                                                                                                 #
+#                                                                                                                                                    #
+# THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,                                              #
+# OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.                       #
+# THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.                                                  #
+# NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.   #
+######################################################################################################################################################
+
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connector.WeChatPay", "Connector.WeChatPay\Connector.WeChatPay.csproj", "{45BF3427-658C-44EE-A3C1-5996773DDAF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailServer.Extensions.WeChatPay", "RetailServer.Extensions.WeChatPay\RetailServer.Extensions.WeChatPay.csproj", "{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Runtime.Extensions.WeChatPay", "Runtime.Extensions.WeChatPay\Runtime.Extensions.WeChatPay.csproj", "{F786C8F5-356D-4B01-B726-DFC97B946CA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Debug|x64.ActiveCfg = Debug|x64
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Debug|x64.Build.0 = Debug|x64
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Release|x64.ActiveCfg = Release|x64
+		{45BF3427-658C-44EE-A3C1-5996773DDAF5}.Release|x64.Build.0 = Release|x64
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Debug|x64.Build.0 = Debug|Any CPU
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Release|x64.ActiveCfg = Release|Any CPU
+		{292DEC39-2FD7-4872-8AFB-8E4E1BFAA236}.Release|x64.Build.0 = Release|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Debug|x64.Build.0 = Debug|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Release|x64.ActiveCfg = Release|Any CPU
+		{F786C8F5-356D-4B01-B726-DFC97B946CA3}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {415B3FF6-6460-48A7-8821-207D118989A9}
+	EndGlobalSection
+EndGlobal
