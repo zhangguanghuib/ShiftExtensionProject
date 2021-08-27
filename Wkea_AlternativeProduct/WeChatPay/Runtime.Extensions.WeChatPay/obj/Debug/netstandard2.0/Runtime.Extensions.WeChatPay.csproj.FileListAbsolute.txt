@@ -1,8 +1,0 @@
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\bin\Debug\netstandard2.0\Contoso.Commerce.Runtime.WeChatPay.deps.json
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\bin\Debug\netstandard2.0\Contoso.Commerce.Runtime.WeChatPay.dll
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\bin\Debug\netstandard2.0\Contoso.Commerce.Runtime.WeChatPay.pdb
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\obj\Debug\netstandard2.0\Runtime.Extensions.WeChatPay.csproj.CoreCompileInputs.cache
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\obj\Debug\netstandard2.0\Runtime.Extensions.WeChatPay.AssemblyInfoInputs.cache
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\obj\Debug\netstandard2.0\Runtime.Extensions.WeChatPay.AssemblyInfo.cs
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\obj\Debug\netstandard2.0\Contoso.Commerce.Runtime.WeChatPay.dll
-C:\Temp\WKEA_RetailSDK\version01\HoganRetailCode\WeChatPay\Runtime.Extensions.WeChatPay\obj\Debug\netstandard2.0\Contoso.Commerce.Runtime.WeChatPay.pdb
