@@ -11,9 +11,10 @@
     export interface IWKEAProductExtended {
     ItemId: string;
     Product: number;
-    MTItemId?: string;
-    MTProduct: number;
     DataAreaId?: string;
+    MTItemId?: string;
+    MTProduct?: number;
+    Images?: Entities.MediaLocation[];
     ExtensionProperties?: Entities.CommerceProperty[];
     }
   
@@ -56,13 +57,16 @@
         public Product: number;
       
         // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
+        public DataAreaId: string;
+      
+        // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
         public MTItemId: string;
       
         // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
         public MTProduct: number;
       
         // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
-        public DataAreaId: string;
+        public Images: Entities.MediaLocation[];
       
         // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
         public ExtensionProperties: Entities.CommerceProperty[];
@@ -82,14 +86,37 @@
             this.Product = (odataObject.Product) ? parseInt(odataObject.Product, 10) : 0;
               
             // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
+            this.DataAreaId = odataObject.DataAreaId;
+              
+            // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
             this.MTItemId = odataObject.MTItemId;
               
             // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
             this.MTProduct = (odataObject.MTProduct) ? parseInt(odataObject.MTProduct, 10) : 0;
               
-            // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
-            this.DataAreaId = odataObject.DataAreaId;
-              
+        // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
+        this.Images = undefined;
+        if (odataObject.Images) {
+          this.Images = [];
+          for (var i = 0; i < odataObject.Images.length; i++) {
+            if (odataObject.Images[i]) {
+        if (odataObject.Images[i]['@odata.type']) {
+          var className: string = odataObject.Images[i]['@odata.type'];
+          className = className.substr(className.lastIndexOf('.') + 1).concat("Class");
+          if (EntityClasses[className]) {
+            this.Images[i] = new EntityClasses[className](odataObject.Images[i])
+          }
+        } else {
+          this.Images[i] = new EntityClasses.MediaLocationClass(odataObject.Images[i]);
+        }
+      
+            } else {
+              // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
+              this.Images[i] = undefined;
+            }
+          }
+        }
+      
         // @ts-ignore - TODO bug fix #23427261 - remove ts-ignore - https://microsoft.visualstudio.com/DefaultCollection/OSGS/_workitems/edit/23427261/
         this.ExtensionProperties = undefined;
         if (odataObject.ExtensionProperties) {

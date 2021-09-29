@@ -6,7 +6,7 @@
     [DataContract]
     public class WKEAProductExtendedDataRequest : Request
     {
-        public WKEAProductExtendedDataRequest(string itemId, long productId)
+        public WKEAProductExtendedDataRequest(string itemId, long? productId)
         {
             this.ItemdId = itemId;
             this.ProductId = productId;
@@ -16,6 +16,6 @@
         public string ItemdId { private set; get; }
 
         [DataMember]
-        public long ProductId { private set; get; }
+        public long? ProductId { private set; get; }
     }
 }

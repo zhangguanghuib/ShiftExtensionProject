@@ -1,6 +1,8 @@
 ﻿namespace WKEA.Commerce.Runtime.DataModel
 {
+    using System;
     using System.Runtime.Serialization;
+    using Microsoft.Dynamics.Commerce.Runtime;
     using Microsoft.Dynamics.Commerce.Runtime.ComponentModel.DataAnnotations;
     using Microsoft.Dynamics.Commerce.Runtime.DataModel;
     using SystemDataAnnotations = System.ComponentModel.DataAnnotations;
@@ -12,8 +14,9 @@
         private const string MTItemIdColumn = "MTItemId";
         private const string MTProductIdColumn = "MTProduct";
         private const string DataAreaIdColumn = "DataAreaId";
+        private const string ImagesColumn = "ImagesColumn";
 
-        [DataMember]
+       [DataMember]
         [SystemDataAnnotations.Key]
         [Key]
         [Column(ItemIdColumn)]
@@ -32,8 +35,16 @@
         }
 
         [DataMember]
+        [Column(DataAreaIdColumn)]
+        public string DataAreaId
+        {
+            get { return (string)this[DataAreaIdColumn]; }
+            set { this[DataAreaIdColumn] = value; }
+        }
+
+        [DataMember]
         [Column(MTItemIdColumn)]
-        public string MTItemId
+        public string  MTItemId
         {
             get { return (string)this[MTItemIdColumn]; }
             set { this[MTItemIdColumn] = value; }
@@ -41,18 +52,18 @@
 
         [DataMember]
         [Column(MTProductIdColumn)]
-        public long MTProduct
+        public long? MTProduct
         {
-            get { return (long)this[MTProductIdColumn]; }
+            get { return (long?)this[MTProductIdColumn]; }
             set { this[MTProductIdColumn] = value; }
         }
 
         [DataMember]
-        [Column(DataAreaIdColumn)]
-        public string DataAreaId
+        [Column(ImagesColumn)]
+        public PagedResult<MediaLocation> Images
         {
-            get { return (string)this[DataAreaIdColumn]; }
-            set { this[DataAreaIdColumn] = value; }
+            get { return (PagedResult<MediaLocation>)this[ImagesColumn]; }
+            set { this[ImagesColumn] = value; }
         }
 
         public WKEAProductExtended()

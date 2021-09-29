@@ -88,15 +88,15 @@
         }
 
         
-    export function createGetWKEAProductsExtendedInput(queryResultSettings: IQueryResultSettings, productId: number, itemId: string): IDataServiceRequest {
+    export function createGetWKEAProductsExtendedInput(queryResultSettings: IQueryResultSettings, itemId: string, productId: number): IDataServiceRequest {
     const query = wKEAProductsQuery().resultSettings(queryResultSettings);
-    return query.createDataServiceRequestForOperation('GetWKEAProductsExtended', false, DataServiceEntities.WKEAProductExtendedExtensionClass, 'true', {bypassCache: 'none', returnEntity: 'DataServiceEntities.IWKEAProductExtended'}, {productId: productId, itemId: itemId });
+    return query.createDataServiceRequestForOperation('GetWKEAProductsExtended', false, DataServiceEntities.WKEAProductExtendedExtensionClass, 'true', {bypassCache: 'none', returnEntity: 'DataServiceEntities.IWKEAProductExtended'}, {itemId: itemId, productId: productId });
     }
 
     
-    export function getWKEAProductsExtendedAsync(context: IContext, productId: number, itemId: string): AsyncResult<DataServiceEntities.IWKEAProductExtended[]> {
+    export function getWKEAProductsExtendedAsync(context: IContext, itemId: string, productId: number): AsyncResult<DataServiceEntities.IWKEAProductExtended[]> {
     const request = createGetWKEAProductsExtendedInput(
-      context.queryResultSettings || {}, productId, itemId);
+      context.queryResultSettings || {}, itemId, productId);
     return callActionOrExecute<DataServiceEntities.IWKEAProductExtended[]>(request, context.callerContext);
     }
   
