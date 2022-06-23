@@ -33,7 +33,7 @@ NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU H
     <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts" Version="10.3.21146.2" />
     <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Messages" Version="9.29.21146.14" />
     <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="9.29.21146.14" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
